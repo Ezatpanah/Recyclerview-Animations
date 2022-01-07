@@ -23,7 +23,7 @@ class SampleAdapter(private val items: MutableList<SampleModel>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(items[position]) // Set the view to fade in
-        setScaleAnimation(holder.itemView)
+        setFadeAnimation(holder.itemView)
 
     }
 
