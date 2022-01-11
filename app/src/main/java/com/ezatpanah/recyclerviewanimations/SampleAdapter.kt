@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 class SampleAdapter(private val items: MutableList<SampleModel>) :
     RecyclerView.Adapter<SampleAdapter.ViewHolder>() {
 
-    private val FADE_DURATION = 500 //FADE_DURATION in milliseconds
+    private val FADE_DURATION = 1000 //FADE_DURATION in milliseconds
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -23,7 +23,7 @@ class SampleAdapter(private val items: MutableList<SampleModel>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind(items[position]) // Set the view to fade in
-        setFadeAnimation(holder.itemView)
+        setScaleAnimation(holder.itemView)
 
     }
 
